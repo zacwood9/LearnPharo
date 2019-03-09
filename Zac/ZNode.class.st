@@ -22,7 +22,6 @@ ZNode class >> withVal: aVal [
 
 { #category : #initialization }
 ZNode >> initialize [
-	"comment stating purpose of message"
 	val := nil.
 	next := nil.
 ]
