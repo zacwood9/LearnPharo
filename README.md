@@ -16,7 +16,6 @@ list elementAt: 1. --> 5
 A javadoc like utility that prints documentation of classes and packages to streams. Example: 
 
 ```
-| p |
 ZDoc documentClass: ZLinkedList on Transcript.
 ```
 
