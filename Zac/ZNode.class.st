@@ -1,3 +1,6 @@
+"
+I am a node in a singly linked list.
+"
 Class {
 	#name : #ZNode,
 	#superclass : #Object,
@@ -8,7 +11,7 @@ Class {
 	#category : #Zac
 }
 
-{ #category : #'as yet unclassified' }
+{ #category : #initialization }
 ZNode class >> withVal: aVal [
 	| node |
 	node := self new.
@@ -31,14 +34,11 @@ ZNode >> next [
 
 { #category : #initialization }
 ZNode >> next: aNode [
-	"comment stating purpose of message"
-
 	next := aNode.
 ]
 
 { #category : #accessing }
 ZNode >> val [
-	"comment stating purpose of message"
 	^ val.
 ]
 

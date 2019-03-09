@@ -22,21 +22,20 @@ ZLinkedList class >> with: aCollection [
 
 { #category : #accessing }
 ZLinkedList >> count [
+	"Answers the number of elements in the linked list."
 	^ count.
 ]
 
 { #category : #accessing }
 ZLinkedList >> elementAt: anIndex [
-	"comment stating purpose of message"
+	"Answers with the element at anIndex."
 
 	| node |
 	node := head.
 	( node isNil ) ifTrue: [ self error: 'Linked List is empty' ].
 	(anIndex - 1)
-		timesRepeat: [
-			node := node next 
-			].
-	^ node       val.
+		timesRepeat: [ node := node next ].
+	^ node val.
 ]
 
 { #category : #initialization }
@@ -49,7 +48,7 @@ ZLinkedList >> initialize [
 
 { #category : #accessing }
 ZLinkedList >> insert: aVal [
-	"comment stating purpose of message"
+	"Inserts an element at the end of the linked list."
 	| v |
 	count := count + 1.
 	( head isNil ) ifTrue: [ head := (ZNode withVal: aVal). ^ self].
@@ -61,7 +60,7 @@ ZLinkedList >> insert: aVal [
 
 { #category : #modifying }
 ZLinkedList >> removeAt: anIndex [
-	"Removes an element from anIndex."
+	"Removes the element from anIndex."
 	| ptr |
 	(anIndex > count) ifTrue: [ self error: 'index out of bounds'. ^self ].
 

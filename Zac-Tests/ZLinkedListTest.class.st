@@ -9,8 +9,6 @@ Class {
 
 { #category : #tests }
 ZLinkedListTest >> testInsert [
-	"Test the insert message."
-
 	| list |
 	list := ZLinkedList new.
 	list insert: 5.
@@ -23,8 +21,6 @@ ZLinkedListTest >> testInsert [
 
 { #category : #tests }
 ZLinkedListTest >> testNew [
-	"comment stating purpose of message"
-
 	| zlist |
 	zlist := ZLinkedList new.
 	self assert: (zlist count) equals: 0.
